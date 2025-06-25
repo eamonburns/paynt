@@ -1,4 +1,4 @@
-module github.com/agent-e11/paynt
+module github.com/eamonburns/paynt
 
 go 1.22.1
 

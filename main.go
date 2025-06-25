@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	colexp "github.com/agent-e11/paynt/colorexpression"
+	colexp "github.com/eamonburns/paynt/colorexpression"
 	"github.com/spf13/pflag"
 )
 
@@ -108,7 +108,7 @@ Expressions:
 					fields = strings.Split(line, fieldSeparator)
 				}
 
-				if exp.Selector >= len(fields) {
+				if exp.Selector >= colexp.Selector(len(fields)) {
 					// TODO: Handle this error instead of just skipping
 					continue
 				}
